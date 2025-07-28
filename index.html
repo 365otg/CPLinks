@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Charles Paris Music - Digital Business Card & Link Hub</title>
+    <meta name="description" content="Official digital business card and link hub for Charles Paris (Brother OTG, 365 OTG, Over Time Grind, 365charlesparis, Charles A. Paris). Discover music, producer tools, masterclasses, and connect on social media.">
+    <meta name="keywords" content="Charles Paris Music, brother OTG, Over Time Grind, 365charlesparis, Charles A. Paris, music producer, software developer, author, MPC, SP-404, producer tools, masterclass, hip hop, digital business card, links, Gumroad, Akai MPC, Roland SP-404, Yamaha SeqTrak, Drum App, Producer Tutorials, Akai Force App, Roland Verselab MV-1, Aetherflow App, Quote Maker, CPU Knife, Metronome, Chord Explorer, Sample Organizer, Instagram, YouTube, Twitter, TikTok, Reddit, Linktree, PayPal, Cash App, Chime, Book">
+    <meta name="author" content="Charles Paris">
+    <link rel="canonical" href="https://365otg.github.io/CharlesParisLinks/"> <!-- IMPORTANT: Replace with your actual live URL for this page -->
+
+    <!-- Open Graph / Social Media Sharing Meta Tags (for Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Charles Paris Music - Digital Business Card & Link Hub">
+    <meta property="og:description" content="Official digital business card and link hub for Charles Paris (Brother OTG, 365 OTG, Over Time Grind, 365charlesparis, Charles A. Paris). Discover music, producer tools, masterclasses, and connect on social media.">
+    <meta property="og:url" content="https://365otg.github.io/CharlesParisLinks/"> <!-- IMPORTANT: Replace with your actual live URL for this page -->
+    <meta property="og:image" content="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true"> <!-- Your actual bio image URL -->
+    <meta property="og:image:alt" content="Charles A. Paris (Brother OTG) - Music Producer, Developer, Author">
+    <meta property="og:site_name" content="Charles Paris Music">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@365CharlesParis"> <!-- Replace with your actual Twitter handle if different -->
+    <meta name="twitter:creator" content="@365CharlesParis"> <!-- Replace with your actual Twitter handle if different -->
+    <meta name="twitter:title" content="Charles Paris Music - Digital Business Card">
+    <meta name="twitter:description" content="Official digital business card and link hub for Charles Paris (Brother OTG, Charles A. Paris). Access music, tools, masterclasses, and social media.">
+    <meta name="twitter:image" content="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true"> <!-- Your actual bio image URL -->
+    <meta name="twitter:image:alt" content="Charles A. Paris (Brother OTG) - Music Producer, Developer, Author">
+
+    <!-- Pinterest Verification -->
+    <meta name="p:domain_verify" content="e34f010d8707447a986be3662caee327"/>
+
+    <!-- Tailwind CSS CDN for modern and responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter for a clean, modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Custom CSS for body and background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(-45deg, #8B0000, #000000, #8B0000, #000000); /* Dark Red to Black Gradient */
+            background-size: 400% 400%; /* Larger background for animation */
+            animation: gradientMove 15s ease infinite; /* Animation applied */
+            color: #e0e0e0; /* Light text color */
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            justify-content: flex-start; /* Align content to top, allowing scroll */
+            padding-top: 40px; /* Top padding for overall content */
+            padding-bottom: 40px; /* Space for footer */
+        }
+
+        /* Gradient Animation */
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Styling for the link buttons */
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align icon and text to the left */
+            width: 100%; /* Ensure button takes full width of its parent container */
+            padding: 18px 24px; /* Slightly more padding for a bolder look */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0.75rem; /* Rounded corners */
+            font-size: 1.125rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Changed to background-color */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+            text-align: left; /* Align text within button */
+            border: 1px solid #555; /* Subtle border */
+        }
+
+        .link-button:hover {
+            transform: translateY(-4px); /* More pronounced lift */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Even deeper shadow */
+            filter: brightness(1.2); /* Slightly brighten on hover */
+        }
+
+        .link-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            filter: brightness(0.8); /* Slightly darken on click */
+        }
+
+        .link-button i {
+            margin-right: 15px; /* More space for icon */
+            font-size: 1.6rem; /* Slightly larger icon */
+            color: #a0a0a0; /* Subtle icon color */
+        }
+
+        /* Fade-in animation for main content */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in-content {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        /* Business Card Specific Styles */
+        .business-card {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            border-radius: 1rem; /* More rounded corners for the card */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            padding: 2.5rem; /* Increased padding */
+            max-width: 450px; /* Fixed width for card-like appearance */
+            width: 90%; /* Responsive width */
+            margin-bottom: 40px; /* Space below card */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative; /* For pseudo-elements if needed */
+        }
+
+        .business-card-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Circular image */
+            object-fit: cover;
+            border: 4px solid #4a4a4a; /* Border around image */
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .business-card h2 {
+            font-size: 2.5rem; /* Larger name */
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+        }
+
+        .business-card p {
+            font-size: 1rem;
+            color: #bbb;
+            margin-bottom: 0.5rem;
+        }
+
+        .business-card .tagline {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 0.5rem;
+        }
+
+        /* Specific styling for the quick action buttons within the business card */
+        .business-card .link-button {
+            justify-content: center; /* Center text/icon within these smaller buttons */
+            font-size: 0.95rem; /* Slightly smaller font for these */
+            padding: 10px 15px; /* Adjusted padding */
+            margin-bottom: 10px; /* Tighter spacing */
+            background: #4a4a4a; /* Simpler background */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            border: none;
+        }
+        .business-card .link-button:hover {
+            background: #666;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .business-card .link-button i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        /* Main Links Grid Container */
+        .all-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-fit columns, min 250px wide */
+            gap: 15px; /* Gap between grid items for a tighter look */
+            width: 100%;
+            max-width: 1200px; /* Max width for the entire grid */
+            padding: 0 20px; /* Horizontal padding */
+        }
+
+        /* Date and Time Styling */
+        #datetime-display {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 20px; /* Space below date/time */
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <main class="container mx-auto px-4 py-8 md:py-12 flex flex-col items-center fade-in-content">
+        
+        <!-- Date Display -->
+        <div id="datetime-display"></div>
+
+        <!-- Digital Business Card Section -->
+        <section class="business-card">
+            <img src="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true" alt="Charles A. Paris" class="business-card-img" onerror="this.onerror=null;this.src='https://placehold.co/120x120/cccccc/ffffff?text=Image';">
+            <h2 class="font-extrabold">Charles A. Paris</h2>
+            <p class="text-xl font-semibold text-gray-300">Brother OTG</p>
+            <p class="text-base text-gray-400">
+                <a href="https://365otg.github.io/ProducerTools/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Music Producer</a>, 
+                <a href="https://365otg.github.io/CPUKnife/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Developer</a>, 
+                <a href="https://brotherotg.gumroad.com/l/lsxpg" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Author</a>, 
+                <a href="https://brotherotg.gumroad.com/l/lsxpg" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Consultant</a>
+            </p>
+            <p class="text-sm text-gray-500">
+                <a href="https://share.google/pfg4gbrqgM0MMUbMu" target="_blank" class="text-gray-500 hover:text-white transition-colors duration-200">CEO & Founder, Over Time Grind Productions</a>
+            </p>
+            <p class="tagline">
+                <a href="https://365otg.github.io/365CP/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">365 Brand</a> || 
+                <a href="https://365otg.github.io/365CP/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Over Time Grind</a> || 
+                <a href="https://365otg.github.io/365CP/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">About me</a>
+            </p>
+            
+            <!-- Quick Links / Call to Actions within the card -->
+            <div class="mt-6 w-full flex flex-col items-center">
+                <a href="https://365otg.github.io/365CP" target="_blank" class="link-button bg-gray-600 hover:bg-gray-700 text-sm py-2 px-4 mb-3 max-w-xs">
+                    <i class="fas fa-user-circle"></i> About Me
+                </a>
+                <a href="https://brotherotg.gumroad.com/l/lsxpg" target="_blank" class="link-button bg-purple-600 hover:bg-purple-700 text-sm py-2 px-4 mb-3 max-w-xs">
+                    <i class="fas fa-book-open"></i> Buy My Book
+                </a>
+                <a href="https://chime.com/r/charlesparis19" target="_blank" class="link-button bg-teal-600 hover:bg-teal-700 text-sm py-2 px-4 mb-3 max-w-xs">
+                    <i class="fas fa-credit-card"></i> Build Credit with Chime
+                </a>
+                <div class="flex flex-wrap justify-center gap-3 w-full max-w-xs">
+                    <a href="https://paypal.me/shopotg" target="_blank" class="link-button bg-blue-700 hover:bg-blue-800 text-sm py-2 px-4 mb-0 flex-grow">
+                        <i class="fab fa-paypal"></i> PayPal
+                    </a>
+                    <a href="https://cash.app/$pfprinting" target="_blank" class="link-button bg-green-700 hover:bg-green-800 text-sm py-2 px-4 mb-0 flex-grow">
+                        <i class="fas fa-dollar-sign"></i> Cash App
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Links in a Single Responsive Grid Container -->
+        <section class="all-links-grid">
+            <!-- All 33 links combined -->
+            <a href="http://linktr.ee/365charlesparis" target="_blank" class="link-button bg-blue-600 hover:bg-blue-700">
+                <i class="fas fa-link"></i> All My Links (Linktree)
+            </a>
+            <a href="https://brotherotg.gumroad.com/l/jkvtk" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-box"></i> O.T.G MPC Stimulus Pack
+            </a>
+            <a href="https://brotherotg.gumroad.com/l/MPCMasterclass" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-graduation-cap"></i> $5 Akai MPC ONE & Live 2 Masterclass
+            </a>
+            <a href="https://brotherotg.gumroad.com/l/cjkeak" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-music"></i> 400+ MPC Chord Progressions
+            </a>
+            <a href="https://brotherotg.gumroad.com/l/fayaz" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-drum"></i> O.T.G Smackers DrumKit
+            </a>
+            <a href="https://brotherotg.gumroad.com/l/dchte" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-hdd"></i> 15GB - 45 Expansions
+            </a>
+            <a href="https://brotherotg.gumroad.com/l/cxozj" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-box"></i> O.T.G Roland Stimulus Pack
+            </a>
+            <a href="https://brotherotg.gumroad.com/l/eccpqg" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-compact-disc"></i> Roland Stash
+            </a>
+            <a href="https://brotherotg.gumroad.com/l/oayds" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-graduation-cap"></i> $5 Roland SP-404 MK2 Masterclass
+            </a>
+            <a href="https://brotherotg.gumroad.com/l/xsxltf" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-book"></i> Roland SP-404 MK2 CheatSheet
+            </a>
+            <a href="https://brotherotg.gumroad.com/l/zrhjl" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-volume-up"></i> Roland SP-404 MK2 Soundbank
+            </a>
+            <a href="https://brotherotg.gumroad.com/l/crvbw" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-image"></i> Roland SP-404 MK2 Free Screensaver
+            </a>
+            <a href="https://365otg.github.io/AkaiMPCGuide/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-compass"></i> Charles Paris Akai MPC Guide
+            </a>
+            <a href="https://365otg.github.io/seqtrak/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-compass"></i> Charles Paris Yamaha SeqTrak Guide
+            </a>
+            <a href="https://365otg.github.io/drumapp/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-drum"></i> Charles Paris Drum App
+            </a>
+            <a href="https://365otg.github.io/producertutorials/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-video"></i> Charles Paris Producer Tutorials
+            </a>
+            <a href="https://365otg.github.io/sp404-mk2-guide/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-compass"></i> Charles Paris SP-404 MK2 Guide
+            </a>
+            <a href="https://365otg.github.io/akaiforceapp/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-mobile-alt"></i> Charles Paris Akai Force App
+            </a>
+            <a href="https://365otg.github.io/RolandVerselabMV1/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-compact-disc"></i> Charles Paris Roland Verselab MV-1
+            </a>
+            <a href="https://365otg.github.io/aetherflow-app/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-cloud"></i> Charles Paris Aetherflow App
+            </a>
+            <a href="https://365otg.github.io/OTGQuotes/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-quote-right"></i> Charles Paris Quote Maker
+            </a>
+            <a href="https://365otg.github.io/ProducerTools/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-tools"></i> Charles Paris Producer Tools
+            </a>
+            <a href="https://365otg.github.io/CPUKnife/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-cut"></i> Charles Paris CPU Knife
+            </a>
+            <a href="https://365otg.github.io/metronome/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-clock"></i> Charles Paris Metronome
+            </a>
+            <a href="https://365otg.github.io/ChordExplorer/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-guitar"></i> Charles Paris Chord Explorer
+            </a>
+            <a href="https://365otg.github.io/SampleOrganizer/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-folder"></i> Charles Paris Sample Organizer
+            </a>
+            <a href="https://365otg.github.io/CharlesParisMusic/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-headphones-alt"></i> Charles Paris Music Site
+            </a>
+            <a href="http://instagram.com/365charlesparis" target="_blank" class="link-button bg-pink-600 hover:bg-pink-700">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.youtube.com/@365charlesparis/releases" target="_blank" class="link-button bg-red-600 hover:bg-red-700">
+                <i class="fab fa-youtube"></i> YouTube Releases
+            </a>
+            <a href="http://x.com/365charlesparis" target="_blank" class="link-button bg-gray-700 hover:bg-gray-800">
+                <i class="fab fa-twitter"></i> Twitter/X
+            </a>
+            <a href="http://tiktok.com/@365otg" target="_blank" class="link-button bg-black hover:bg-gray-900">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a href="https://www.reddit.com/user/supplythework/" target="_blank" class="link-button bg-orange-600 hover:bg-orange-700">
+                <i class="fab fa-reddit"></i> Charles Paris Reddit
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full py-8 text-center text-gray-500 text-sm">
+        &copy; 2025 Charles Paris. All Rights Reserved.
+    </footer>
+
+    <script>
+        // Function to update date and time
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric'
+            };
+            const formattedDate = now.toLocaleDateString(undefined, options);
+            document.getElementById('datetime-display').textContent = formattedDate;
+        }
+
+        // Update date immediately and then every second (though only date changes once a day)
+        updateDateTime();
+        setInterval(updateDateTime, 1000); 
+    </script>
+</body>
+</html>
