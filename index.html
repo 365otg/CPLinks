@@ -207,6 +207,18 @@
 
         <!-- Digital Business Card Section -->
         <section class="business-card">
+            <!-- 
+                Image Code:
+                - The 'src' attribute points to a raw image file hosted on GitHub, which is a common and generally reliable way to serve static assets.
+                - The 'alt' attribute provides descriptive text for accessibility, which is excellent.
+                - The 'class' attribute applies styling defined in your CSS to make the image circular and appropriately sized.
+                - The 'onerror' attribute is a robust fallback:
+                    - `this.onerror=null;`: Prevents an infinite loop if the fallback image itself fails to load.
+                    - `this.src='https://placehold.co/120x120/cccccc/ffffff?text=Image';`: Provides a generic placeholder image if the primary image fails to load, ensuring something is always displayed.
+                
+                Consideration for optimization:
+                For larger images or if performance becomes an issue, consider optimizing the image (e.g., compressing it, using WebP format) and potentially hosting it on a CDN for faster delivery. However, for a small profile picture like this, the current setup is perfectly fine.
+            -->
             <img src="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true" alt="Charles A. Paris" class="business-card-img" onerror="this.onerror=null;this.src='https://placehold.co/120x120/cccccc/ffffff?text=Image';">
             <h2 class="font-extrabold">Charles A. Paris</h2>
             <p class="text-xl font-semibold text-gray-300">Brother OTG</p>
