@@ -9,24 +9,24 @@
     <meta name="description" content="Official digital business card and link hub for Charles Paris (Brother OTG, 365 OTG, Over Time Grind, 365charlesparis, Charles A. Paris). Discover music, producer tools, masterclasses, and connect on social media.">
     <meta name="keywords" content="Charles Paris Music, brother OTG, Over Time Grind, 365charlesparis, Charles A. Paris, music producer, software developer, author, MPC, SP-404, producer tools, masterclass, hip hop, digital business card, links, Gumroad, Akai MPC, Roland SP-404, Yamaha SeqTrak, Drum App, Producer Tutorials, Akai Force App, Roland Verselab MV-1, Aetherflow App, Quote Maker, CPU Knife, Metronome, Chord Explorer, Sample Organizer, Instagram, YouTube, Twitter, TikTok, Reddit, Linktree, PayPal, Cash App, Chime, Book">
     <meta name="author" content="Charles Paris">
-    <link rel="canonical" href="https://365otg.github.io/CharlesParisLinks/"> <!-- IMPORTANT: Replace with your actual live URL for this page -->
+    <link rel="canonical" href="https://365otg.github.io/CharlesParisLinks/">
 
     <!-- Open Graph / Social Media Sharing Meta Tags (for Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Charles Paris Music - Digital Business Card & Link Hub">
     <meta property="og:description" content="Official digital business card and link hub for Charles Paris (Brother OTG, 365 OTG, Over Time Grind, 365charlesparis, Charles A. Paris). Discover music, producer tools, masterclasses, and connect on social media.">
-    <meta property="og:url" content="https://365otg.github.io/CharlesParisLinks/"> <!-- IMPORTANT: Replace with your actual live URL for this page -->
-    <meta property="og:image" content="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true"> <!-- Your actual bio image URL -->
+    <meta property="og:url" content="https://365otg.github.io/CharlesParisLinks/">
+    <meta property="og:image" content="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true">
     <meta property="og:image:alt" content="Charles A. Paris (Brother OTG) - Music Producer, Developer, Author">
     <meta property="og:site_name" content="Charles Paris Music">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@365CharlesParis"> <!-- Replace with your actual Twitter handle if different -->
-    <meta name="twitter:creator" content="@365CharlesParis"> <!-- Replace with your actual Twitter handle if different -->
+    <meta name="twitter:site" content="@365CharlesParis">
+    <meta name="twitter:creator" content="@365CharlesParis">
     <meta name="twitter:title" content="Charles Paris Music - Digital Business Card">
     <meta name="twitter:description" content="Official digital business card and link hub for Charles Paris (Brother OTG, Charles A. Paris). Access music, tools, masterclasses, and social media.">
-    <meta name="twitter:image" content="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true"> <!-- Your actual bio image URL -->
+    <meta name="twitter:image" content="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true">
     <meta name="twitter:image:alt" content="Charles A. Paris (Brother OTG) - Music Producer, Developer, Author">
 
     <!-- Pinterest Verification -->
@@ -38,6 +38,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Gumroad Embed Script -->
+    <script src="https://gumroad.com/js/gumroad-embed.js"></script>
 
     <style>
         /* Custom CSS for body and background */
@@ -169,13 +172,13 @@
         .business-card .link-button:hover {
             background: #666;
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            box-shadow: 4px 8px rgba(0,0,0,0.3);
         }
         .business-card .link-button i {
             margin-right: 8px;
             font-size: 1.2rem;
         }
-
+        
         /* Main Links Grid Container */
         .all-links-grid {
             display: grid;
@@ -196,6 +199,27 @@
             width: 100%;
             max-width: 600px;
         }
+        
+        /* New styling for the blog section */
+        .blog-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        /* New color schemes for link buttons */
+        .bg-custom-blue { background-color: #0d47a1; }
+        .hover\:bg-custom-blue-dark:hover { background-color: #0b3c8f; }
+        .bg-custom-red { background-color: #c62828; }
+        .hover\:bg-custom-red-dark:hover { background-color: #b71c1c; }
+        .bg-custom-orange { background-color: #ef6c00; }
+        .hover\:bg-custom-orange-dark:hover { background-color: #e65100; }
+        .bg-custom-green { background-color: #2e7d32; }
+        .hover\:bg-custom-green-dark:hover { background-color: #1b5e20; }
+        .bg-custom-teal { background-color: #00897b; }
+        .hover\:bg-custom-teal-dark:hover { background-color: #00695c; }
+        .bg-custom-purple { background-color: #6a1b9a; }
+        .hover\:bg-custom-purple-dark:hover { background-color: #4a148c; }
     </style>
 </head>
 <body class="antialiased">
@@ -207,26 +231,14 @@
 
         <!-- Digital Business Card Section -->
         <section class="business-card">
-            <!-- 
-                Image Code:
-                - The 'src' attribute points to a raw image file hosted on GitHub, which is a common and generally reliable way to serve static assets.
-                - The 'alt' attribute provides descriptive text for accessibility, which is excellent.
-                - The 'class' attribute applies styling defined in your CSS to make the image circular and appropriately sized.
-                - The 'onerror' attribute is a robust fallback:
-                    - `this.onerror=null;`: Prevents an infinite loop if the fallback image itself fails to load.
-                    - `this.src='https://placehold.co/120x120/cccccc/ffffff?text=Image';`: Provides a generic placeholder image if the primary image fails to load, ensuring something is always displayed.
-                
-                Consideration for optimization:
-                For larger images or if performance becomes an issue, consider optimizing the image (e.g., compressing it, using WebP format) and potentially hosting it on a CDN for faster delivery. However, for a small profile picture like this, the current setup is perfectly fine.
-            -->
             <img src="https://github.com/365otg/365CP/blob/main/Charles_Paris_bio.jpg?raw=true" alt="Charles A. Paris" class="business-card-img" onerror="this.onerror=null;this.src='https://placehold.co/120x120/cccccc/ffffff?text=Image';">
             <h2 class="font-extrabold">Charles A. Paris</h2>
             <p class="text-xl font-semibold text-gray-300">Brother OTG</p>
             <p class="text-base text-gray-400">
                 <a href="https://365otg.github.io/ProducerTools/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Music Producer</a>, 
                 <a href="https://365otg.github.io/CPUKnife/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Developer</a>, 
-                <a href="https://brotherotg.gumroad.com/l/lsxpg" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Author</a>, 
-                <a href="https://brotherotg.gumroad.com/l/lsxpg" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Consultant</a>
+                <a href="https://charlesparismusic.gumroad.com/l/lsxpg" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Author</a>, 
+                <a href="https://charlesparismusic.gumroad.com/l/lsxpg" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Consultant</a>
             </p>
             <p class="text-sm text-gray-500">
                 <a href="https://share.google/pfg4gbrqgM0MMUbMu" target="_blank" class="text-gray-500 hover:text-white transition-colors duration-200">CEO & Founder, Over Time Grind Productions</a>
@@ -242,11 +254,14 @@
                 <a href="https://365otg.github.io/365CP" target="_blank" class="link-button bg-gray-600 hover:bg-gray-700 text-sm py-2 px-4 mb-3 max-w-xs">
                     <i class="fas fa-user-circle"></i> About Me
                 </a>
-                <a href="https://brotherotg.gumroad.com/l/lsxpg" target="_blank" class="link-button bg-purple-600 hover:bg-purple-700 text-sm py-2 px-4 mb-3 max-w-xs">
-                    <i class="fas fa-book-open"></i> Buy My Book
+                <a href="https://charlesparismusic.gumroad.com/l/lsxpg" target="_blank" class="link-button bg-purple-600 hover:bg-purple-700 text-sm py-2 px-4 mb-3 max-w-xs">
+                    <i class="fas fa-book-open"></i> Get My Book (Free)
                 </a>
                 <a href="https://chime.com/r/charlesparis19" target="_blank" class="link-button bg-teal-600 hover:bg-teal-700 text-sm py-2 px-4 mb-3 max-w-xs">
                     <i class="fas fa-credit-card"></i> Build Credit with Chime
+                </a>
+                <a href="http://otgresearch.info" target="_blank" class="link-button bg-custom-orange hover:bg-custom-orange-dark text-sm py-2 px-4 mb-3 max-w-xs">
+                    <i class="fas fa-search"></i> OTG Research Wiki
                 </a>
                 <div class="flex flex-wrap justify-center gap-3 w-full max-w-xs">
                     <a href="https://paypal.me/shopotg" target="_blank" class="link-button bg-blue-700 hover:bg-blue-800 text-sm py-2 px-4 mb-0 flex-grow">
@@ -258,106 +273,177 @@
                 </div>
             </div>
         </section>
+        
+        <!-- New Video Embed Section -->
+        <section class="max-w-screen-md mx-auto px-4 py-8 w-full">
+            <h3 class="text-2xl font-bold mb-4 text-center text-gray-200">Latest from Charles Paris Music</h3>
+            <div id="latest-video-embed" class="aspect-video my-4 w-full">
+                <p class="text-center text-gray-400">Loading latest video...</p>
+            </div>
+        </section>
+
+        <!-- New Blog Posts Section -->
+        <section class="max-w-screen-md mx-auto px-4 py-8 w-full">
+            <h3 class="text-2xl font-bold mb-4 text-center text-gray-200">From the Charles Paris Music Blog</h3>
+            <div id="rss-feed-container" class="space-y-8">
+                <p class="text-center text-gray-400">Loading latest blog posts...</p>
+            </div>
+        </section>
 
         <!-- All Links in a Single Responsive Grid Container -->
-        <section class="all-links-grid">
+        <section class="all-links-grid mt-8">
             <!-- All 33 links combined -->
-            <a href="http://linktr.ee/365charlesparis" target="_blank" class="link-button bg-blue-600 hover:bg-blue-700">
-                <i class="fas fa-link"></i> All My Links (Linktree)
+            <a href="http://charlesparis.net" target="_blank" class="link-button bg-custom-blue hover:bg-custom-blue-dark">
+                <i class="fas fa-link"></i> Charles Paris Official Website
             </a>
-            <a href="https://brotherotg.gumroad.com/l/jkvtk" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+            <a href="https://charlesparismusic.gumroad.com/l/opbrs" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-book"></i> The SEO Wikipedia style Layout
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/wdznrx" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-book-open"></i> The Unforgettable Chronicle; 91 Revelations (Ebook)
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/upovt" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-headphones"></i> Free Instrumental Albums
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/jkvtk" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
                 <i class="fas fa-box"></i> O.T.G MPC Stimulus Pack
             </a>
-            <a href="https://brotherotg.gumroad.com/l/MPCMasterclass" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-graduation-cap"></i> $5 Akai MPC ONE & Live 2 Masterclass
+            <a href="https://charlesparismusic.gumroad.com/l/ezutn" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-drum"></i> Free Drum Kits
             </a>
-            <a href="https://brotherotg.gumroad.com/l/cjkeak" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-music"></i> 400+ MPC Chord Progressions
-            </a>
-            <a href="https://brotherotg.gumroad.com/l/fayaz" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-drum"></i> O.T.G Smackers DrumKit
-            </a>
-            <a href="https://brotherotg.gumroad.com/l/dchte" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-hdd"></i> 15GB - 45 Expansions
-            </a>
-            <a href="https://brotherotg.gumroad.com/l/cxozj" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-box"></i> O.T.G Roland Stimulus Pack
-            </a>
-            <a href="https://brotherotg.gumroad.com/l/eccpqg" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-compact-disc"></i> Roland Stash
-            </a>
-            <a href="https://brotherotg.gumroad.com/l/oayds" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-graduation-cap"></i> $5 Roland SP-404 MK2 Masterclass
-            </a>
-            <a href="https://brotherotg.gumroad.com/l/xsxltf" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-book"></i> Roland SP-404 MK2 CheatSheet
-            </a>
-            <a href="https://brotherotg.gumroad.com/l/zrhjl" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-volume-up"></i> Roland SP-404 MK2 Soundbank
-            </a>
-            <a href="https://brotherotg.gumroad.com/l/crvbw" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+            <a href="https://charlesparismusic.gumroad.com/l/crvbw" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
                 <i class="fas fa-image"></i> Roland SP-404 MK2 Free Screensaver
             </a>
-            <a href="https://365otg.github.io/AkaiMPCGuide/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-compass"></i> Charles Paris Akai MPC Guide
+            <a href="https://charlesparismusic.gumroad.com/l/yovcy" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-mobile-alt"></i> Charles Paris Drum App
             </a>
-            <a href="https://365otg.github.io/seqtrak/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-compass"></i> Charles Paris Yamaha SeqTrak Guide
-            </a>
-            <a href="https://365otg.github.io/drumapp/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-drum"></i> Charles Paris Drum App
-            </a>
-            <a href="https://365otg.github.io/producertutorials/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-video"></i> Charles Paris Producer Tutorials
-            </a>
-            <a href="https://365otg.github.io/sp404-mk2-guide/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-compass"></i> Charles Paris SP-404 MK2 Guide
-            </a>
-            <a href="https://365otg.github.io/akaiforceapp/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-mobile-alt"></i> Charles Paris Akai Force App
-            </a>
-            <a href="https://365otg.github.io/RolandVerselabMV1/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-compact-disc"></i> Charles Paris Roland Verselab MV-1
-            </a>
-            <a href="https://365otg.github.io/aetherflow-app/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-cloud"></i> Charles Paris Aetherflow App
-            </a>
-            <a href="https://365otg.github.io/OTGQuotes/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-quote-right"></i> Charles Paris Quote Maker
-            </a>
-            <a href="https://365otg.github.io/ProducerTools/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+            <a href="https://charlesparismusic.gumroad.com/l/siojbx" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
                 <i class="fas fa-tools"></i> Charles Paris Producer Tools
             </a>
-            <a href="https://365otg.github.io/CPUKnife/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-cut"></i> Charles Paris CPU Knife
+            <a href="https://charlesparismusic.gumroad.com/l/oayds" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-graduation-cap"></i> Roland SP-404 MK2 Masterclass
             </a>
-            <a href="https://365otg.github.io/metronome/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-clock"></i> Charles Paris Metronome
+            <a href="https://charlesparismusic.blogspot.com/2023/02/a-beginners-guide-to-roland-sp-404-mk2.html" target="_blank" class="link-button bg-custom-red hover:bg-custom-red-dark">
+                <i class="fas fa-newspaper"></i> Roland SP-404 MKII Blogpost
             </a>
-            <a href="https://365otg.github.io/ChordExplorer/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-guitar"></i> Charles Paris Chord Explorer
+            <a href="https://charlesparismusic.gumroad.com/l/eccpqg" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-folder-open"></i> Roland Stash
             </a>
-            <a href="https://365otg.github.io/SampleOrganizer/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-folder"></i> Charles Paris Sample Organizer
+            <a href="https://charlesparismusic.gumroad.com/l/xsxltf" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-file-alt"></i> Roland SP-404 MK2 CheatSheet
             </a>
-            <a href="https://365otg.github.io/CharlesParisMusic/" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
-                <i class="fas fa-headphones-alt"></i> Charles Paris Music Site
+            <a href="https://charlesparismusic.gumroad.com/l/zrhjl" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-volume-up"></i> Roland SP-404 MK2 Soundbank
             </a>
-            <a href="http://instagram.com/365charlesparis" target="_blank" class="link-button bg-pink-600 hover:bg-pink-700">
-                <i class="fab fa-instagram"></i> Instagram
+            <a href="https://charlesparismusic.gumroad.com/l/gdxefq" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-compass"></i> Charles Paris SP-404 MK2 Guide
             </a>
-            <a href="https://www.youtube.com/@365charlesparis/releases" target="_blank" class="link-button bg-red-600 hover:bg-red-700">
+            <a href="https://charlesparismusic.gumroad.com/l/tiebp" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-box"></i> SP404 Field Manual & Ammo Kit
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/cxozj" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-box"></i> O.T.G Roland Stimulus Pack
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/MPCMasterclass" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-graduation-cap"></i> AKAI MPC ONE & Live 2 Masterclass
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/cjkeak" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-music"></i> 400+ MPC Chord Progressions
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/fayaz" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-drum"></i> O.T.G Smackers DrumKit
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/dchte" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-hdd"></i> AKAI MPC/FORCE 15gb - 45 Expansions
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/erurth" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-compass"></i> Charles Paris Akai MPC Guide
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/deemn" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-wrench"></i> Akai Arsenal
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/ximwy" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-book-open"></i> The Akai MPC Genesis
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/iuglqh" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-graduation-cap"></i> The Akai Force Masterclass
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/ssropf" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-folder-open"></i> The O.T.G Akai MPC Files
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/gtfzpq" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-lock-open"></i> Producer All Access Pass
+            </a>
+            <a href="https://charlesparismusic.blogspot.com/2023/02/akai-mpc-one-beginners-guide.html" target="_blank" class="link-button bg-custom-red hover:bg-custom-red-dark">
+                <i class="fas fa-newspaper"></i> MPC Blog Post
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/yamahaseqtrak" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-compass"></i> Charles Paris Yamaha SeqTrak Guide
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/jxzpvn" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-compass"></i> Charles Paris Roland Verselab MV-1
+            </a>
+            <a href="https://www.youtube.com/@365charlesparis/releases" target="_blank" class="link-button bg-custom-red hover:bg-custom-red-dark">
                 <i class="fab fa-youtube"></i> YouTube Releases
             </a>
-            <a href="http://x.com/365charlesparis" target="_blank" class="link-button bg-gray-700 hover:bg-gray-800">
-                <i class="fab fa-twitter"></i> Twitter/X
+            <a href="https://muziquemagazine.com/the-international-teemsterrs-union-a-new-voice-for-the-overworked-hustler/" target="_blank" class="link-button bg-custom-purple hover:bg-custom-purple-dark">
+                <i class="fas fa-microphone-alt"></i> Muzique Magazine Article
             </a>
-            <a href="http://tiktok.com/@365otg" target="_blank" class="link-button bg-black hover:bg-gray-900">
-                <i class="fab fa-tiktok"></i> TikTok
+            <a href="https://charlesparismusic.gumroad.com/l/gvpjvp" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-user-secret"></i> SEO Digital Ghost Business profiles
             </a>
-            <a href="https://www.reddit.com/user/supplythework/" target="_blank" class="link-button bg-orange-600 hover:bg-orange-700">
-                <i class="fab fa-reddit"></i> Charles Paris Reddit
+            <a href="https://charlesparismusic.gumroad.com/l/uxjruu" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-archive"></i> Beatbuilder TV archive 300+ videos
             </a>
+            <a href="https://charlesparismusic.gumroad.com/l/igtio" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-graduation-cap"></i> Masterclass of all Masterclasses
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/ijmxwl" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-music"></i> Producer Sample Kit
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/rcuccq" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-headphones"></i> The Lofi Vibe Kit
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/dooleb" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-drum-steelpan"></i> The Universal Drum Fortress
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/yqbzdh" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-cloud-sun"></i> The Westcoast Starter Kit
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/uupjn" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-fire-alt"></i> The Boom Bap Ignition Kit
+            </a>
+            <a href="https://charlesparismusic.gumroad.com/l/duadj" target="_blank" class="link-button bg-gray-800 hover:bg-gray-900">
+                <i class="fas fa-users"></i> The Dynamic Duo
+            </a>
+            <a href="http://otgresearch.info" target="_blank" class="link-button bg-custom-orange hover:bg-custom-orange-dark">
+                <i class="fas fa-search"></i> OTG Research Wiki
+            </a>
+        </section>
+
+        <!-- New Section for Teemsterrs Union Links -->
+        <section class="max-w-screen-md mx-auto px-4 py-8 w-full">
+            <h3 class="text-2xl font-bold mb-4 text-center text-gray-200">The International Teemsterrs Union</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="https://charlesparismusic.gumroad.com/l/teemsterrs" target="_blank" class="link-button bg-custom-teal hover:bg-custom-teal-dark">
+                    <i class="fas fa-handshake"></i> Get Your Free Founding Member Kit
+                </a>
+                <a href="https://charlesparismusic.gumroad.com" target="_blank" class="link-button bg-custom-green hover:bg-custom-green-dark">
+                    <i class="fas fa-coffee"></i> Contribute to the Movement
+                </a>
+            </div>
+        </section>
+        
+        <!-- New Gumroad Email Form Widget -->
+        <section class="max-w-md mx-auto px-4 py-8 w-full">
+            <h3 class="text-2xl font-bold mb-4 text-center text-gray-200">Get Updates from Charles Paris</h3>
+            <div class="bg-white p-6 rounded-lg shadow-xl">
+                <form class="input-with-button" action="https://gumroad.com/follow_from_embed_form" method="post" id="gumroad-follow-form-embed">
+                    <input type="hidden" name="seller_id" value="3131715104950"/>
+                    <input id="gumroad-follow-form-embed-input" type="email" placeholder="Your email address" name="email" value="" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 text-gray-900 p-3">
+                    <button type="submit" class="w-full mt-3 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700">Follow</button>
+                </form>
+            </div>
         </section>
 
     </main>
@@ -381,9 +467,103 @@
             document.getElementById('datetime-display').textContent = formattedDate;
         }
 
-        // Update date immediately and then every second (though only date changes once a day)
-        updateDateTime();
-        setInterval(updateDateTime, 1000); 
+        // --- BLOG RSS FEED LOGIC ---
+        /**
+         * Fetches and displays blog posts from the charlesparismusic.blogspot.com RSS feed.
+         */
+        async function fetchBlogPosts() {
+            const feedContainer = document.getElementById('rss-feed-container');
+            const rssUrl = 'https://charlesparismusic.blogspot.com/feeds/posts/default';
+            // We use a proxy to convert RSS to JSON to bypass CORS issues.
+            const proxyUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+
+            try {
+                const response = await fetch(proxyUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                if (data.status !== 'ok' || !data.items || data.items.length === 0) {
+                    feedContainer.innerHTML = '<p class="text-center text-gray-400">Could not load blog posts at this time. The blog feed service may be temporarily unavailable. Please try again later.</p>';
+                    return;
+                }
+
+                let postsHtml = '';
+                data.items.slice(0, 3).forEach(item => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(item.description, 'text/html');
+                    
+                    const firstImage = doc.querySelector('img');
+                    const imageUrl = firstImage ? firstImage.src : 'https://placehold.co/600x400/1a1a1a/cccccc?text=No+Image';
+                    
+                    const textSnippet = (doc.body.textContent || "").substring(0, 150).trim() + '...';
+                    const postDate = new Date(item.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+                    postsHtml += `
+                        <div class="border border-gray-700 rounded-lg p-4 bg-gray-900 shadow-sm flex flex-col md:flex-row gap-4 blog-item">
+                            <div class="md:w-1/3">
+                                <a href="${item.link}" target="_blank" rel="noopener noreferrer">
+                                    <img src="${imageUrl}" alt="${item.title}" class="w-full h-32 object-cover rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/cccccc?text=Image+Error';">
+                                </a>
+                            </div>
+                            <div class="md:w-2/3">
+                                <h4 class="text-lg font-bold mb-1"><a href="${item.link}" target="_blank" rel="noopener noreferrer" class="hover:underline">${item.title}</a></h4>
+                                <p class="text-xs text-gray-400 mb-2">${postDate}</p>
+                                <p class="text-sm text-gray-300">${textSnippet}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                feedContainer.innerHTML = postsHtml;
+
+            } catch (error) {
+                console.error('Error fetching RSS feed:', error);
+                feedContainer.innerHTML = '<p class="text-center text-gray-400">There was an error loading the blog posts. The blog feed service may be temporarily unavailable. Please try again later.</p>';
+            }
+        }
+        
+        // --- YOUTUBE VIDEO LOGIC ---
+        /**
+         * Fetches the latest YouTube video and embeds it.
+         */
+        async function fetchLatestVideo() {
+            const feedContainer = document.getElementById('latest-video-embed');
+            if (!feedContainer) return;
+
+            const rssUrl = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCz4GDiCOWci-3ihX5ZyiXlA';
+            const proxyUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+            
+            try {
+                const response = await fetch(proxyUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                
+                if (data.status === 'ok' && data.items && data.items.length > 0) {
+                    const latestVideo = data.items[0];
+                    const videoId = latestVideo.link.split('v=')[1];
+                    feedContainer.innerHTML = `
+                        <iframe class="w-full h-full rounded-lg shadow-xl" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    `;
+                } else {
+                    feedContainer.innerHTML = '<p class="text-center text-gray-400">Could not load video feed.</p>';
+                }
+            } catch (error) {
+                console.error('Error fetching YouTube feed:', error);
+                feedContainer.innerHTML = '<p class="text-center text-gray-400">There was an error loading the video feed. The feed service may be temporarily unavailable. Please try again later.</p>';
+            }
+        }
+
+        // Initial calls
+        document.addEventListener('DOMContentLoaded', () => {
+            updateDateTime();
+            setInterval(updateDateTime, 1000);
+            fetchLatestVideo();
+            fetchBlogPosts();
+        });
     </script>
 </body>
 </html>
